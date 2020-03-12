@@ -1,0 +1,7 @@
+<%= form_for @burger do |f| %>
+    <div>New Burger:</div>
+    Burger: <%= f.text_field :name %>
+    Price: <%= f.text_field :price %>
+    Pic: <%= f.file_field :pic %>
+    <%= f.submit %>
+  <% end %>

@@ -1,0 +1,5 @@
+<% @burgers.each do |burger| %>
+    <div><%= link_to(burger.name, "/burgers/#{burger.id}") %></div>
+<% end %>
+
+<%= link_to("Create new Burger?", "/burgers/new") %>

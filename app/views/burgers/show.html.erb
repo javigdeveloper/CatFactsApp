@@ -1,0 +1,19 @@
+<h2><%= @burger.name %></h2>
+<h3><%= @burger.price %></h3>
+
+<%= link_to "home", "/burgers" %>
+
+
+
+
+<% if @burger.pic.attached? %>
+    <%= image_tag @burger.pic, class: "burger-pic" %>
+<% end %>
+
+
+<%= link_to "Edit", "/burgers/#{@burger.id}/edit" %>
+
+
+<%= button_to "Delete", @burger, method: :delete, data: { confirm: "Are you sure?" } %>
+
+
